@@ -44,7 +44,7 @@
                     </local:TabItem.Header>
 
                     <local:TabItem.Content>
-                        <TextBlock Text="a" HorizontalAlignment="Center" VerticalAlignment="Center" />
+                        <TextBlock Text="Tab 1" FontSize="42" HorizontalAlignment="Center" VerticalAlignment="Center" />
                     </local:TabItem.Content>
                 </local:TabItem>
 
@@ -53,7 +53,7 @@
                         <TextBlock Text="♺"   />
                     </local:TabItem.Header>
                     <local:TabItem.Content>
-                        <TextBlock Text="b" HorizontalAlignment="Center" VerticalAlignment="Center" />
+                        <TextBlock Text="Tab 2" FontSize="42" HorizontalAlignment="Center" VerticalAlignment="Center" />
                     </local:TabItem.Content>
                 </local:TabItem>
 
@@ -62,7 +62,7 @@
                         <TextBlock Text="☏"  />
                     </local:TabItem.Header>
                     <local:TabItem.Content>
-                        <TextBlock Text="c" HorizontalAlignment="Center" VerticalAlignment="Center" />
+                        <TextBlock Text="Tab 3" FontSize="42" HorizontalAlignment="Center" VerticalAlignment="Center" />
                     </local:TabItem.Content>
                 </local:TabItem>
 
@@ -71,7 +71,7 @@
                         <TextBlock Text="⛛"  />
                     </local:TabItem.Header>
                     <local:TabItem.Content>
-                        <TextBlock Text="d" HorizontalAlignment="Center" VerticalAlignment="Center" />
+                        <TextBlock Text="Tab 4" FontSize="42" HorizontalAlignment="Center" VerticalAlignment="Center" />
                     </local:TabItem.Content>
                 </local:TabItem>
 
