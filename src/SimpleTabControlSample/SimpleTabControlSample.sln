@@ -24,12 +24,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 EndProject
 Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
-		SimpleTabControlSample\SimpleTabControlSample.Shared\SimpleTabControlSample.Shared.projitems*{1c6d2cb4-d406-4c27-b26a-90560ba6cc9a}*SharedItemsImports = 4
 		SimpleTabControlSample\SimpleTabControlSample.Shared\SimpleTabControlSample.Shared.projitems*{6279c845-92f8-4333-ab99-3d213163593c}*SharedItemsImports = 13
-		SimpleTabControlSample\SimpleTabControlSample.Shared\SimpleTabControlSample.Shared.projitems*{7325ff68-bbdf-48c1-823c-875f2915bb29}*SharedItemsImports = 4
-		SimpleTabControlSample\SimpleTabControlSample.Shared\SimpleTabControlSample.Shared.projitems*{a1523c26-a22a-4abd-85d0-7a3c2d471b41}*SharedItemsImports = 4
 		SimpleTabControlSample\SimpleTabControlSample.Shared\SimpleTabControlSample.Shared.projitems*{d925f29a-d5dc-4f5c-8fc1-7996e9fa4d45}*SharedItemsImports = 4
-		SimpleTabControlSample\SimpleTabControlSample.Shared\SimpleTabControlSample.Shared.projitems*{f73188a4-c39f-448f-a638-38d485282a68}*SharedItemsImports = 5
 	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Ad-Hoc|Any CPU = Ad-Hoc|Any CPU
@@ -225,6 +221,8 @@ Global
 		{D925F29A-D5DC-4F5C-8FC1-7996E9FA4D45}.AppStore|x86.Build.0 = Debug|x86
 		{D925F29A-D5DC-4F5C-8FC1-7996E9FA4D45}.AppStore|x86.Deploy.0 = Debug|x86
 		{D925F29A-D5DC-4F5C-8FC1-7996E9FA4D45}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{D925F29A-D5DC-4F5C-8FC1-7996E9FA4D45}.Debug|Any CPU.Build.0 = Debug|x86
+		{D925F29A-D5DC-4F5C-8FC1-7996E9FA4D45}.Debug|Any CPU.Deploy.0 = Debug|x86
 		{D925F29A-D5DC-4F5C-8FC1-7996E9FA4D45}.Debug|ARM.ActiveCfg = Debug|ARM
 		{D925F29A-D5DC-4F5C-8FC1-7996E9FA4D45}.Debug|ARM.Build.0 = Debug|ARM
 		{D925F29A-D5DC-4F5C-8FC1-7996E9FA4D45}.Debug|ARM.Deploy.0 = Debug|ARM

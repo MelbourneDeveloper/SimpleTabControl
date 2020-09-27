@@ -6,7 +6,9 @@
     <GenerateLibraryLayout>true</GenerateLibraryLayout>
     <LangVersion>8.0</LangVersion>
     <Nullable>disable</Nullable>
-    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>    
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <RootNamespace>Simple</RootNamespace>
+    <AssemblyName>Simple</AssemblyName>    
   </PropertyGroup>
   <ItemGroup>
     <PackageReference Include="Microsoft.CodeAnalysis.FxCopAnalyzers" Version="3.3.0">
