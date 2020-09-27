@@ -2,7 +2,7 @@
     x:Class="SimpleTabControlSample.MainPage"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-    xmlns:local="using:Simple"
+    xmlns:simple="using:Simple"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
@@ -10,9 +10,9 @@
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
-        <local:TabControl >
+        <simple:TabControl >
 
-            <local:TabControl.HeaderNonSelectionStyle>
+            <simple:TabControl.HeaderNonSelectionStyle>
                 <Style TargetType="TextBlock">
                     <Setter Property="FontSize" Value="42" />
                     <Setter Property="HorizontalAlignment" Value="Stretch" />
@@ -20,9 +20,9 @@
                     <Setter Property="Margin" Value="0,20,0,20" />
                     <Setter Property="Foreground" Value="White" />
                 </Style>
-            </local:TabControl.HeaderNonSelectionStyle>
+            </simple:TabControl.HeaderNonSelectionStyle>
 
-            <local:TabControl.HeaderSelectionStyle>
+            <simple:TabControl.HeaderSelectionStyle>
                 <Style TargetType="TextBlock">
                     <Setter Property="FontSize" Value="42" />
                     <Setter Property="HorizontalAlignment" Value="Stretch" />
@@ -30,53 +30,53 @@
                     <Setter Property="Margin" Value="0,20,0,20" />
                     <Setter Property="Foreground" Value="Black" />
                 </Style>
-            </local:TabControl.HeaderSelectionStyle>
+            </simple:TabControl.HeaderSelectionStyle>
 
-            <local:TabControl.SelectionBrush>
+            <simple:TabControl.SelectionBrush>
                 <SolidColorBrush>White</SolidColorBrush>
-            </local:TabControl.SelectionBrush>
+            </simple:TabControl.SelectionBrush>
 
-            <local:TabControl.Items>
+            <simple:TabControl.Items>
 
-                <local:TabItem>
-                    <local:TabItem.Header>
+                <simple:TabItem>
+                    <simple:TabItem.Header>
                         <TextBlock Text="⛗"  />
-                    </local:TabItem.Header>
+                    </simple:TabItem.Header>
 
-                    <local:TabItem.Content>
+                    <simple:TabItem.Content>
                         <TextBlock Text="Tab 1" FontSize="42" HorizontalAlignment="Center" VerticalAlignment="Center" />
-                    </local:TabItem.Content>
-                </local:TabItem>
+                    </simple:TabItem.Content>
+                </simple:TabItem>
 
-                <local:TabItem>
-                    <local:TabItem.Header>
+                <simple:TabItem>
+                    <simple:TabItem.Header>
                         <TextBlock Text="♺"   />
-                    </local:TabItem.Header>
-                    <local:TabItem.Content>
+                    </simple:TabItem.Header>
+                    <simple:TabItem.Content>
                         <TextBlock Text="Tab 2" FontSize="42" HorizontalAlignment="Center" VerticalAlignment="Center" />
-                    </local:TabItem.Content>
-                </local:TabItem>
+                    </simple:TabItem.Content>
+                </simple:TabItem>
 
-                <local:TabItem>
-                    <local:TabItem.Header>
+                <simple:TabItem>
+                    <simple:TabItem.Header>
                         <TextBlock Text="☏"  />
-                    </local:TabItem.Header>
-                    <local:TabItem.Content>
+                    </simple:TabItem.Header>
+                    <simple:TabItem.Content>
                         <TextBlock Text="Tab 3" FontSize="42" HorizontalAlignment="Center" VerticalAlignment="Center" />
-                    </local:TabItem.Content>
-                </local:TabItem>
+                    </simple:TabItem.Content>
+                </simple:TabItem>
 
-                <local:TabItem>
-                    <local:TabItem.Header>
+                <simple:TabItem>
+                    <simple:TabItem.Header>
                         <TextBlock Text="⛛"  />
-                    </local:TabItem.Header>
-                    <local:TabItem.Content>
+                    </simple:TabItem.Header>
+                    <simple:TabItem.Content>
                         <TextBlock Text="Tab 4" FontSize="42" HorizontalAlignment="Center" VerticalAlignment="Center" />
-                    </local:TabItem.Content>
-                </local:TabItem>
+                    </simple:TabItem.Content>
+                </simple:TabItem>
 
-            </local:TabControl.Items>
-        </local:TabControl>
+            </simple:TabControl.Items>
+        </simple:TabControl>
         
     </Grid>
 </Page>
