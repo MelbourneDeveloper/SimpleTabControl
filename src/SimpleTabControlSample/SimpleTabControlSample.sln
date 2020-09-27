@@ -24,6 +24,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 EndProject
 Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		SimpleTabControlSample\SimpleTabControlSample.Shared\SimpleTabControlSample.Shared.projitems*{1c6d2cb4-d406-4c27-b26a-90560ba6cc9a}*SharedItemsImports = 4
 		SimpleTabControlSample\SimpleTabControlSample.Shared\SimpleTabControlSample.Shared.projitems*{6279c845-92f8-4333-ab99-3d213163593c}*SharedItemsImports = 13
 		SimpleTabControlSample\SimpleTabControlSample.Shared\SimpleTabControlSample.Shared.projitems*{d925f29a-d5dc-4f5c-8fc1-7996e9fa4d45}*SharedItemsImports = 4
 	EndGlobalSection
