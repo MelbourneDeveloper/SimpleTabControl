@@ -7,76 +7,76 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
-    <Page.Resources>
 
-    </Page.Resources>
-    
-    <local:TabControl >
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
-        <local:TabControl.HeaderNonSelectionStyle>
-            <Style TargetType="TextBlock">
-                <Setter Property="FontSize" Value="42" />
-                <Setter Property="HorizontalAlignment" Value="Stretch" />
-                <Setter Property="TextAlignment" Value="Center" />
-                <Setter Property="Margin" Value="0,20,0,20" />
-                <Setter Property="Foreground" Value="White" />
-            </Style>
-        </local:TabControl.HeaderNonSelectionStyle>
+        <local:TabControl >
+
+            <local:TabControl.HeaderNonSelectionStyle>
+                <Style TargetType="TextBlock">
+                    <Setter Property="FontSize" Value="42" />
+                    <Setter Property="HorizontalAlignment" Value="Stretch" />
+                    <Setter Property="TextAlignment" Value="Center" />
+                    <Setter Property="Margin" Value="0,20,0,20" />
+                    <Setter Property="Foreground" Value="White" />
+                </Style>
+            </local:TabControl.HeaderNonSelectionStyle>
+
+            <local:TabControl.HeaderSelectionStyle>
+                <Style TargetType="TextBlock">
+                    <Setter Property="FontSize" Value="42" />
+                    <Setter Property="HorizontalAlignment" Value="Stretch" />
+                    <Setter Property="TextAlignment" Value="Center" />
+                    <Setter Property="Margin" Value="0,20,0,20" />
+                    <Setter Property="Foreground" Value="Black" />
+                </Style>
+            </local:TabControl.HeaderSelectionStyle>
+
+            <local:TabControl.SelectionBrush>
+                <SolidColorBrush>White</SolidColorBrush>
+            </local:TabControl.SelectionBrush>
+
+            <local:TabControl.Items>
+
+                <local:TabItem>
+                    <local:TabItem.Header>
+                        <TextBlock Text="⛗"  />
+                    </local:TabItem.Header>
+
+                    <local:TabItem.Content>
+                        <TextBlock Text="a" HorizontalAlignment="Center" VerticalAlignment="Center" />
+                    </local:TabItem.Content>
+                </local:TabItem>
+
+                <local:TabItem>
+                    <local:TabItem.Header>
+                        <TextBlock Text="♺"   />
+                    </local:TabItem.Header>
+                    <local:TabItem.Content>
+                        <TextBlock Text="b" HorizontalAlignment="Center" VerticalAlignment="Center" />
+                    </local:TabItem.Content>
+                </local:TabItem>
+
+                <local:TabItem>
+                    <local:TabItem.Header>
+                        <TextBlock Text="☏"  />
+                    </local:TabItem.Header>
+                    <local:TabItem.Content>
+                        <TextBlock Text="c" HorizontalAlignment="Center" VerticalAlignment="Center" />
+                    </local:TabItem.Content>
+                </local:TabItem>
+
+                <local:TabItem>
+                    <local:TabItem.Header>
+                        <TextBlock Text="⛛"  />
+                    </local:TabItem.Header>
+                    <local:TabItem.Content>
+                        <TextBlock Text="d" HorizontalAlignment="Center" VerticalAlignment="Center" />
+                    </local:TabItem.Content>
+                </local:TabItem>
+
+            </local:TabControl.Items>
+        </local:TabControl>
         
-        <local:TabControl.HeaderSelectionStyle>
-            <Style TargetType="TextBlock">
-                <Setter Property="FontSize" Value="42" />
-                <Setter Property="HorizontalAlignment" Value="Stretch" />
-                <Setter Property="TextAlignment" Value="Center" />
-                <Setter Property="Margin" Value="0,20,0,20" />
-                <Setter Property="Foreground" Value="Black" />
-            </Style>
-        </local:TabControl.HeaderSelectionStyle>
-        
-        <local:TabControl.SelectionBrush>
-            <SolidColorBrush>White</SolidColorBrush>
-        </local:TabControl.SelectionBrush>
-        
-        <local:TabControl.Items>
-
-            <local:TabItem>
-                <local:TabItem.Header>
-                    <TextBlock Text="⛗"  />
-                </local:TabItem.Header>
-
-                <local:TabItem.Content>
-                    <TextBlock Text="a" HorizontalAlignment="Center" VerticalAlignment="Center" />
-                </local:TabItem.Content>
-            </local:TabItem>
-
-            <local:TabItem>
-                <local:TabItem.Header>
-                    <TextBlock Text="♺"   />
-                </local:TabItem.Header>
-                <local:TabItem.Content>
-                    <TextBlock Text="b" HorizontalAlignment="Center" VerticalAlignment="Center" />
-                </local:TabItem.Content>
-            </local:TabItem>
-
-            <local:TabItem>
-                <local:TabItem.Header>
-                    <TextBlock Text="☏"  />
-                </local:TabItem.Header>
-                <local:TabItem.Content>
-                    <TextBlock Text="c" HorizontalAlignment="Center" VerticalAlignment="Center" />
-                </local:TabItem.Content>
-            </local:TabItem>
-
-            <local:TabItem>
-                <local:TabItem.Header>
-                    <TextBlock Text="⛛"  />
-                </local:TabItem.Header>
-                <local:TabItem.Content>
-                    <TextBlock Text="d" HorizontalAlignment="Center" VerticalAlignment="Center" />
-                </local:TabItem.Content>
-            </local:TabItem>
-
-        </local:TabControl.Items>
-    </local:TabControl>
-    
+    </Grid>
 </Page>
