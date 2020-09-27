@@ -1,5 +1,4 @@
 ﻿using System.Collections.Generic;
-using System.Linq;
 using Windows.UI;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
@@ -17,6 +16,9 @@ namespace Simple
 
         #region Public Properties
         public List<TabItem> Items { get; set; } = new List<TabItem>();
+        public Brush SelectionBrush { get; set; } = new SolidColorBrush(Colors.Black);
+        public Style HeaderSelectionStyle { get; set; }
+        public Style HeaderNonSelectionStyle { get; set; }
         #endregion
 
         #region Constructor
@@ -44,14 +46,14 @@ namespace Simple
             {
                 HeaderGrid.ColumnDefinitions.Add(new ColumnDefinition { Width = new GridLength(1, GridUnitType.Star) });
 
-                item.ContainerGrid = new Grid();
-                item.ContainerGrid.Children.Add(item.Header);
+                item.HeaderContainerGrid = new Grid();
+                item.HeaderContainerGrid.Children.Add(item.Header);
 
-                HeaderGrid.Children.Add(item.ContainerGrid);
-                SetColumn(item.ContainerGrid, i);
+                HeaderGrid.Children.Add(item.HeaderContainerGrid);
+                SetColumn(item.HeaderContainerGrid, i);
 
-                item.ContainerGrid.Tag = item;
-                item.ContainerGrid.Tapped += Header_Tapped;
+                item.HeaderContainerGrid.Tag = item;
+                item.HeaderContainerGrid.Tapped += Header_Tapped;
 
                 item.Content.Visibility = Visibility.Collapsed;
                 SelectedItemContent.Children.Add(item.Content);
@@ -75,9 +77,17 @@ namespace Simple
         {
             foreach (var item in Items)
             {
-                item.ContainerGrid.Background = ReferenceEquals(tabItem, item) ? new SolidColorBrush(Colors.Red) : new SolidColorBrush(Colors.Transparent);
+                if (HeaderSelectionStyle != null)
+                {
+                    item.Header.Style = ReferenceEquals(tabItem, item) ? HeaderSelectionStyle : HeaderNonSelectionStyle;
+                }
+
+                if (SelectionBrush != null)
+                {
+                    item.HeaderContainerGrid.Background = ReferenceEquals(tabItem, item) ? SelectionBrush : new SolidColorBrush(Colors.Transparent);
+                }
+
                 item.Content.Visibility = ReferenceEquals(tabItem, item) ? Visibility.Visible : Visibility.Collapsed;
-                //Canvas.SetZIndex(item.Content, ReferenceEquals(tabItem, item) ? 1 : 0);
             }
         }
         #endregion

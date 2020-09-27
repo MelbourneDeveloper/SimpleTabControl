@@ -7,6 +7,6 @@ namespace Simple
     {
         public FrameworkElement Header { get; set; }
         public FrameworkElement Content { get; set; }
-        internal Grid ContainerGrid { get; set; }
+        internal Grid HeaderContainerGrid { get; set; }
     }
 }

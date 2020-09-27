@@ -8,20 +8,40 @@
     mc:Ignorable="d">
 
     <Page.Resources>
-        <Style TargetType="TextBlock">
-            <Setter Property="FontSize" Value="42" />
-            <Setter Property="HorizontalAlignment" Value="Stretch" />
-            <Setter Property="TextAlignment" Value="Center" />
-            <Setter Property="Margin" Value="0,20,0,20" />
-        </Style>
+
     </Page.Resources>
     
-    <local:TabControl>
+    <local:TabControl >
+
+        <local:TabControl.HeaderNonSelectionStyle>
+            <Style TargetType="TextBlock">
+                <Setter Property="FontSize" Value="42" />
+                <Setter Property="HorizontalAlignment" Value="Stretch" />
+                <Setter Property="TextAlignment" Value="Center" />
+                <Setter Property="Margin" Value="0,20,0,20" />
+                <Setter Property="Foreground" Value="White" />
+            </Style>
+        </local:TabControl.HeaderNonSelectionStyle>
+        
+        <local:TabControl.HeaderSelectionStyle>
+            <Style TargetType="TextBlock">
+                <Setter Property="FontSize" Value="42" />
+                <Setter Property="HorizontalAlignment" Value="Stretch" />
+                <Setter Property="TextAlignment" Value="Center" />
+                <Setter Property="Margin" Value="0,20,0,20" />
+                <Setter Property="Foreground" Value="Black" />
+            </Style>
+        </local:TabControl.HeaderSelectionStyle>
+        
+        <local:TabControl.SelectionBrush>
+            <SolidColorBrush>White</SolidColorBrush>
+        </local:TabControl.SelectionBrush>
+        
         <local:TabControl.Items>
 
             <local:TabItem>
                 <local:TabItem.Header>
-                    <TextBlock Text="⛗" HorizontalAlignment="Center" />
+                    <TextBlock Text="⛗"  />
                 </local:TabItem.Header>
 
                 <local:TabItem.Content>
@@ -31,7 +51,7 @@
 
             <local:TabItem>
                 <local:TabItem.Header>
-                    <TextBlock Text="♺" HorizontalAlignment="Center"  />
+                    <TextBlock Text="♺"   />
                 </local:TabItem.Header>
                 <local:TabItem.Content>
                     <TextBlock Text="b" HorizontalAlignment="Center" VerticalAlignment="Center" />
@@ -40,7 +60,7 @@
 
             <local:TabItem>
                 <local:TabItem.Header>
-                    <TextBlock Text="☏" HorizontalAlignment="Center"  />
+                    <TextBlock Text="☏"  />
                 </local:TabItem.Header>
                 <local:TabItem.Content>
                     <TextBlock Text="c" HorizontalAlignment="Center" VerticalAlignment="Center" />
@@ -49,7 +69,7 @@
 
             <local:TabItem>
                 <local:TabItem.Header>
-                    <TextBlock Text="⛛" HorizontalAlignment="Center"  />
+                    <TextBlock Text="⛛"  />
                 </local:TabItem.Header>
                 <local:TabItem.Content>
                     <TextBlock Text="d" HorizontalAlignment="Center" VerticalAlignment="Center" />
