@@ -44,5 +44,8 @@
     <PackageReference Include="Uno.Wasm.Bootstrap" Version="1.3.0" />
     <PackageReference Include="Uno.Wasm.Bootstrap.DevServer" Version="1.3.0" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Simple.TabControl\Simple.TabControl.csproj" />
+  </ItemGroup>
   <Import Project="..\SimpleTabControlSample.Shared\SimpleTabControlSample.Shared.projitems" Label="Shared" Condition="Exists('..\SimpleTabControlSample.Shared\SimpleTabControlSample.Shared.projitems')" />
 </Project>

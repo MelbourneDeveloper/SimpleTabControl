@@ -10,9 +10,9 @@
     <Page.Resources>
         <Style TargetType="TextBlock">
             <Setter Property="FontSize" Value="42" />
-            <Setter Property="Height" Value="200" />
             <Setter Property="HorizontalAlignment" Value="Stretch" />
             <Setter Property="TextAlignment" Value="Center" />
+            <Setter Property="Margin" Value="0,20,0,20" />
         </Style>
     </Page.Resources>
     

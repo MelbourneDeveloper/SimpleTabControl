@@ -1,7 +1,10 @@
 ﻿using System.Collections.Generic;
+using System.Linq;
+using Windows.UI;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Input;
+using Windows.UI.Xaml.Media;
 
 namespace Simple
 {
@@ -40,11 +43,15 @@ namespace Simple
             foreach (var item in Items)
             {
                 HeaderGrid.ColumnDefinitions.Add(new ColumnDefinition { Width = new GridLength(1, GridUnitType.Star) });
-                HeaderGrid.Children.Add(item.Header);
-                SetColumn(item.Header, i);
 
-                item.Header.Tag = item;
-                item.Header.Tapped += Header_Tapped;
+                item.ContainerGrid = new Grid();
+                item.ContainerGrid.Children.Add(item.Header);
+
+                HeaderGrid.Children.Add(item.ContainerGrid);
+                SetColumn(item.ContainerGrid, i);
+
+                item.ContainerGrid.Tag = item;
+                item.ContainerGrid.Tapped += Header_Tapped;
 
                 item.Content.Visibility = Visibility.Collapsed;
                 SelectedItemContent.Children.Add(item.Content);
@@ -57,8 +64,8 @@ namespace Simple
 
         private void Header_Tapped(object sender, TappedRoutedEventArgs e)
         {
-            var headerFrameworkElement = (FrameworkElement)sender;
-            var tabItem = (TabItem)headerFrameworkElement.Tag;
+            var headerGridContainer = (Grid)sender;
+            var tabItem = (TabItem)headerGridContainer.Tag;
             Select(tabItem);
         }
         #endregion
@@ -68,8 +75,9 @@ namespace Simple
         {
             foreach (var item in Items)
             {
+                item.ContainerGrid.Background = ReferenceEquals(tabItem, item) ? new SolidColorBrush(Colors.Red) : new SolidColorBrush(Colors.Transparent);
                 item.Content.Visibility = ReferenceEquals(tabItem, item) ? Visibility.Visible : Visibility.Collapsed;
-                Canvas.SetZIndex(item.Content, ReferenceEquals(tabItem, item) ? 1 : 0);
+                //Canvas.SetZIndex(item.Content, ReferenceEquals(tabItem, item) ? 1 : 0);
             }
         }
         #endregion

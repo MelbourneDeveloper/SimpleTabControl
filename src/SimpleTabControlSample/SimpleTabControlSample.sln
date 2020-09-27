@@ -27,6 +27,7 @@ Global
 		SimpleTabControlSample\SimpleTabControlSample.Shared\SimpleTabControlSample.Shared.projitems*{1c6d2cb4-d406-4c27-b26a-90560ba6cc9a}*SharedItemsImports = 4
 		SimpleTabControlSample\SimpleTabControlSample.Shared\SimpleTabControlSample.Shared.projitems*{6279c845-92f8-4333-ab99-3d213163593c}*SharedItemsImports = 13
 		SimpleTabControlSample\SimpleTabControlSample.Shared\SimpleTabControlSample.Shared.projitems*{d925f29a-d5dc-4f5c-8fc1-7996e9fa4d45}*SharedItemsImports = 4
+		SimpleTabControlSample\SimpleTabControlSample.Shared\SimpleTabControlSample.Shared.projitems*{f73188a4-c39f-448f-a638-38d485282a68}*SharedItemsImports = 5
 	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Ad-Hoc|Any CPU = Ad-Hoc|Any CPU
