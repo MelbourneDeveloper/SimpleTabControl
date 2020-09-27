@@ -26,6 +26,7 @@
     <MtouchLink>None</MtouchLink>
     <MtouchDebug>true</MtouchDebug>
     <MtouchExtraArgs>--setenv=MONO_LOG_LEVEL=debug --setenv=MONO_LOG_MASK=gc --setenv=MONO_GC_PARAMS=soft-heap-limit=512m,nursery-size=64m,evacuation-threshold=66,major=marksweep,concurrent-sweep</MtouchExtraArgs>
+    <CodesignKey>iPhone Developer</CodesignKey>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhoneSimulator' ">
     <DebugType>portable</DebugType>
@@ -150,6 +151,12 @@
     </ImageAsset>
   </ItemGroup>
   <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Simple.TabControl\Simple.TabControl.csproj">
+      <Project>{F3AAED20-DFC1-4868-9890-B5A284830D8C}</Project>
+      <Name>Simple.TabControl</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="..\SimpleTabControlSample.Shared\SimpleTabControlSample.Shared.projitems" Label="Shared" Condition="Exists('..\SimpleTabControlSample.Shared\SimpleTabControlSample.Shared.projitems')" />
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
 </Project>

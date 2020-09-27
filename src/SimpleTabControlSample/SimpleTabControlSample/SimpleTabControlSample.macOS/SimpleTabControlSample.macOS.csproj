@@ -104,6 +104,12 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </BundleResource>
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Simple.TabControl\Simple.TabControl.csproj">
+      <Project>{F3AAED20-DFC1-4868-9890-B5A284830D8C}</Project>
+      <Name>Simple.TabControl</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Mac\Xamarin.Mac.CSharp.targets" />
   <Target Name="VS16Mac_RemoveSystemMemory" BeforeTargets="ResolveAssemblyReferences">
     <!--
