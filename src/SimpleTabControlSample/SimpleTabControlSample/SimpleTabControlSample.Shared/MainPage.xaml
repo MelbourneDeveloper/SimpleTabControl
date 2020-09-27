@@ -7,12 +7,21 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
+    <Page.Resources>
+        <Style TargetType="TextBlock">
+            <Setter Property="FontSize" Value="42" />
+            <Setter Property="Height" Value="200" />
+            <Setter Property="HorizontalAlignment" Value="Stretch" />
+            <Setter Property="TextAlignment" Value="Center" />
+        </Style>
+    </Page.Resources>
+    
     <local:TabControl>
         <local:TabControl.Items>
 
             <local:TabItem>
                 <local:TabItem.Header>
-                    <TextBlock Text="Test" HorizontalAlignment="Center" />
+                    <TextBlock Text="⛗" HorizontalAlignment="Center" />
                 </local:TabItem.Header>
 
                 <local:TabItem.Content>
@@ -22,7 +31,7 @@
 
             <local:TabItem>
                 <local:TabItem.Header>
-                    <TextBlock Text="Test2" HorizontalAlignment="Center"  />
+                    <TextBlock Text="♺" HorizontalAlignment="Center"  />
                 </local:TabItem.Header>
                 <local:TabItem.Content>
                     <TextBlock Text="b" HorizontalAlignment="Center" VerticalAlignment="Center" />
@@ -31,10 +40,19 @@
 
             <local:TabItem>
                 <local:TabItem.Header>
-                    <TextBlock Text="Test3" HorizontalAlignment="Center"  />
+                    <TextBlock Text="☏" HorizontalAlignment="Center"  />
                 </local:TabItem.Header>
                 <local:TabItem.Content>
                     <TextBlock Text="c" HorizontalAlignment="Center" VerticalAlignment="Center" />
+                </local:TabItem.Content>
+            </local:TabItem>
+
+            <local:TabItem>
+                <local:TabItem.Header>
+                    <TextBlock Text="⛛" HorizontalAlignment="Center"  />
+                </local:TabItem.Header>
+                <local:TabItem.Content>
+                    <TextBlock Text="d" HorizontalAlignment="Center" VerticalAlignment="Center" />
                 </local:TabItem.Content>
             </local:TabItem>
 
