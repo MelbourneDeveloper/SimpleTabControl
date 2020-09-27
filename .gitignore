@@ -1,0 +1,14 @@
+*.Designer.cs
+*.csproj.user
+bin/
+obj/
+packages/
+/.vs/restore.dg
+*.suo
+.vs
+*.pdb
+*.dll
+project.fragment.lock.json
+project.lock.json
+*.CodeAnalysisLog.xml
+*.lastcodeanalysissucceeded

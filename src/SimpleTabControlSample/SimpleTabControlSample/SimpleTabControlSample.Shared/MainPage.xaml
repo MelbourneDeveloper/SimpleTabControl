@@ -1,0 +1,44 @@
+﻿<Page
+    x:Class="SimpleTabControlSample.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Simple"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <local:TabControl>
+        <local:TabControl.Items>
+
+            <local:TabItem>
+                <local:TabItem.Header>
+                    <TextBlock Text="Test" HorizontalAlignment="Center" />
+                </local:TabItem.Header>
+
+                <local:TabItem.Content>
+                    <TextBlock Text="a" HorizontalAlignment="Center" VerticalAlignment="Center" />
+                </local:TabItem.Content>
+            </local:TabItem>
+
+            <local:TabItem>
+                <local:TabItem.Header>
+                    <TextBlock Text="Test2" HorizontalAlignment="Center"  />
+                </local:TabItem.Header>
+                <local:TabItem.Content>
+                    <TextBlock Text="b" HorizontalAlignment="Center" VerticalAlignment="Center" />
+                </local:TabItem.Content>
+            </local:TabItem>
+
+            <local:TabItem>
+                <local:TabItem.Header>
+                    <TextBlock Text="Test3" HorizontalAlignment="Center"  />
+                </local:TabItem.Header>
+                <local:TabItem.Content>
+                    <TextBlock Text="c" HorizontalAlignment="Center" VerticalAlignment="Center" />
+                </local:TabItem.Content>
+            </local:TabItem>
+
+        </local:TabControl.Items>
+    </local:TabControl>
+    
+</Page>
